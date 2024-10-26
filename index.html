@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this file exists -->
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Form</h1>
+        <form action="">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </p>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <p>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" required>
+                    </p>
+                </fieldset>
+                <p>
+                    <label for="address">Address:</label>
+                    <textarea name="address" id="address" cols="30" rows="5" placeholder="Address" required></textarea>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </p>
+                <p>
+                    <label for="pincode">Pincode:</label>
+                    <input type="number" id="pincode" name="pincode" placeholder="Pincode" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <p>
+                    <label for="card_type">Card Type:</label>
+                    <select name="card_type" id="card_type" required>
+                        <option value="">--Select a Card Type--</option>
+                        <option value="debitcard">Debit Card</option>
+                        <option value="creditcard">Credit Card</option>
+                        <option value="mastercard">Master Card</option>
+                        <option value="visacard">Visa Card</option>
+                        <option value="ATMcard">ATM Card</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="card_number">Card Number:</label>
+                    <input type="number" id="card_number" name="card_number" placeholder="Card Number" required>
+                </p>
+                <p>
+                    <label for="exp_date">Expiration Date:</label>
+                    <input type="date" id="exp_date" name="exp_date" required>
+                </p>
+                <p>
+                    <label for="cvv">CVV:</label>
+                    <input type="password" id="cvv" name="cvv" placeholder="CVV" required>
+                </p>
+                <div class="button-group">
+                    <input type="submit" value="Pay Now" class="btn">
+                    <input type="reset" value="Reset" class="btn reset">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
