@@ -23,7 +23,7 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
     width: 90%; /* Full width */
     max-width: 600px; /* Adjusted for better visibility */
-    margin: 0 auto;
+    margin: auto;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
